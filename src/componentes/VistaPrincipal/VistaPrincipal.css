@@ -1,0 +1,7 @@
+.VistaPrincipal{
+    background-image: url("../../../img/tyson-moultrie-BQTHOGNHo08-unsplash.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    padding: 3em;
+    opacity: 0.5;
+}
