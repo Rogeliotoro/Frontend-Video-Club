@@ -1,7 +1,8 @@
 .App {
     text-align: center;
-    color: rgb(231, 216, 216);
+    color: white;
     min-height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
   }
   

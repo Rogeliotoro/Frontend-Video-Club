@@ -2,11 +2,10 @@ import "./RegistroUsuario.css";
 
 const RegistroUsuario = () => {
   return (
-    <div className="crearUsuario">
+    <div>
+      <form className="crearUsuario">
       <h2 className="h2registro">REGISTRO DE USUARIO</h2>
-      <form >
         <label className="labelCrearUsuario" htmlFor="nombre">
-          Nombre
         </label>
         <input
           className="inputCrearUsuario"
@@ -16,16 +15,15 @@ const RegistroUsuario = () => {
           placeholder="Ingrese su Nombre"
         />
         <label className="labelCrearUsuario" htmlFor="apellidos">
-          Apellidos
         </label>
         <input
           className="inputCrearUsuario"
           type="text"
           id="apellidos"
           name="apellidos"
+          placeholder="Ingrese sus Apellidos"
         />
         <label className="labelCrearUsuario" htmlFor="email">
-          Email
         </label>
         <input
           className="inputCrearUsuario"
@@ -35,24 +33,24 @@ const RegistroUsuario = () => {
           placeholder="ejemplo@dominio.com"
         />
         <label className="labelCrearUsuario" htmlFor="contraseña">
-          Contraseña
         </label>
         <input
           className="inputCrearUsuario"
           type="password"
           id="contraseña"
           name="contraseña"
+          placeholder="Ingrese contraseña nueva"
         />
         <label className="labelCrearUsuario" htmlFor="tel">
-          Telefono
         </label>
         <input
           className="inputCrearUsuario"
           type="tel"
           id="tel"
           name="tel"
-          maxLength="9"
-          minLength="9"
+          maxLength="12"
+          minLength="12"
+          placeholder="+34#########"
         />
         <p> Estoy de acuerdo con <a href="#"> Terminos y condiciones</a></p>
         <input

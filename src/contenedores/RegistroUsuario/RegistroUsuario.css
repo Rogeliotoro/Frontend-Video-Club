@@ -1,52 +1,63 @@
-label {
-    display: block;
-    margin: 10px;
-  }
-  .crearUsuario {
-    background-color: black;
-    background-size: cover;
-    min-height: 100vh;
-    padding-bottom: 2em;
-  }
-  .h2registro {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 3em;
+*{
     margin: 0;
-    padding: 1em;
-  }
-  .labelCrearUsuario {
-    font-size: 2em;
-  }
-  .inputCrearUsuario {
-    font-size: 1em;
-  }
-  .formCrearUsuario {
-    background-color: #050506ad;
-    height: 30em;
-    width: 30em;
-    margin: 1em auto;
-    box-shadow: 0px 0px 50px 10px #00096f;
-    border-radius: 30px;
-    padding: 2em;
-  }
-  .botonCrearUsuario {
-    display: block;
-    margin: 2em auto;
-    border: 1px solid white;
-    background-color: black;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.crearUsuario {
+    width: 400px;
+    background-color: rgba(44, 44, 37, 0.61);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
-    cursor: pointer;
-    font-size: 1.5em;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 7px #00096f;
-  }
-  #nombre {
-    width: 9em;
-  }
-  #apellidos {
-    width: 16em;
-  }
-  #email {
-    width: 16em;
+    box-shadow: 7px 13px 13px rgba(122, 4, 97, 0.623);
+      
+}
+
+.crearUsuario h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: rgb(247, 240, 245);
+}
+
+.inputCrearUsuario{
+    width: 100%;
+    background-color: rgb(217, 238, 231);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(175, 7, 241);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+.crearUsuario p {
+    height: 40px;
     text-align: center;
-  }
+    font-size: 18px;
+}
+
+.crearUsuario a {
+    color: rgb(14, 203, 236);
+    text-decoration: none;
+}
+
+.crearUsuario a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.botonCrearUsuario{
+    width: 100%;
+    border: none;
+    background: rgb(221, 245, 6);
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
