@@ -4,9 +4,15 @@
     min-height: 100vh;   
 }
 
-h2 {
-    font-size: 5.5em;
-    font-family: Georgia, "Times New Roman", Times, serif;
+p {
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+
+h3{
+    font-size: 3em;
+    font-family: 'Josefin Sans', sans-serif;
     margin: 0;
 }
 

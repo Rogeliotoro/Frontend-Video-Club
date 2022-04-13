@@ -1,28 +1,26 @@
-footer {
+header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: 5em;
+    justify-content: flex-end;
+    height: 4em;
     font-family: 'Josefin Sans', sans-serif;
     background-color: black;
-  }
-  .enlacesFooter {
-    display: flex;
-    font-size: 18px;
-    padding: 6px;
-    margin: 16px 10px;
-    cursor: pointer;
-    border-radius: 8px;
-    flex-direction: row-reverse;
     align-items: center;
   }
-  .enlacesFooter:hover {
+  .enlaces {
+    display: inline;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .enlaces:hover {
     background-color: rgba(17, 19, 18, 0.301);
     border: 2px solid rgb(173, 41, 199);
     box-shadow: 0px 0px 3px 3px rgb(58, 59, 59);
   }
-  .enlacesFooter a {
+  .enlaces a {
     text-decoration: none;
-    color: white;
+    color: rgb(243, 242, 243);
   }
-  
