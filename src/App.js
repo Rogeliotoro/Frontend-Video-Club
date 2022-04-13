@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import VistaPrincipal from "./componentes/VistaPrincipal/VistaPrincipal.js";
 import Footer from "./componentes/Footer/Footer";
 import Header from "./componentes/Header/Header";
+import RegistroUsuario from "./contenedores/RegistroUsuario/RegistroUsuario.js";
+
 
 function App ()  {
   return(
@@ -11,6 +13,7 @@ function App ()  {
       <Header />
       <Routes>
       <Route path="/" element={<VistaPrincipal />}></Route>
+      <Route path="/registro" element={<RegistroUsuario />}></Route>
       </Routes>
       <div></div>
       <Footer />
