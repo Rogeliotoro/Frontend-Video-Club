@@ -7,8 +7,9 @@
 .flexImg{
     display: flex;
     justify-content: space-around;
-    height: 400px;
+    height: 450px;
     padding: 3em;
+    margin: 2.2em;
 }
 
 p {

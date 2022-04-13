@@ -3,8 +3,9 @@ import "./RegistroUsuario.css";
 const RegistroUsuario = () => {
   return (
     <div>
+      <a href="/" ><img className="logo" src="https://i.ibb.co/s5TmSPj/ROFLIX-1.png" alt="ROFLIX-1" border="0"/></a>
       <form className="crearUsuario">
-      <h2 className="h2registro">REGISTRO DE USUARIO</h2>
+      <h2>REGISTRO DE USUARIO</h2>
         <label className="labelCrearUsuario" htmlFor="nombre">
         </label>
         <input
@@ -58,7 +59,7 @@ const RegistroUsuario = () => {
           type="submit"
           value="Registrarse"
         />
-        <p><a href="#">¿Ya tengo Cuenta?</a></p>
+        <p><a href="/login">¿Ya tengo Cuenta?</a></p>
       </form>
     </div>
   );

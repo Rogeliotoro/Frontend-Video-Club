@@ -4,6 +4,7 @@ import VistaPrincipal from "./componentes/VistaPrincipal/VistaPrincipal.js";
 import Footer from "./componentes/Footer/Footer";
 import Header from "./componentes/Header/Header";
 import RegistroUsuario from "./contenedores/RegistroUsuario/RegistroUsuario.js";
+import LoginUsuario from "./contenedores/LoginUsuario/LoginUsuario.js";
 
 
 function App ()  {
@@ -14,6 +15,7 @@ function App ()  {
       <Routes>
       <Route path="/" element={<VistaPrincipal />}></Route>
       <Route path="/registro" element={<RegistroUsuario />}></Route>
+      <Route path="/login" element={<LoginUsuario />}></Route>
       </Routes>
       <div></div>
       <Footer />

@@ -2,9 +2,9 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer> Created by
       <div className="enlacesFooter">
-        <a href="https://github.com/Rogeliotoro">Rogelio</a>
+        <a href="https://github.com/Rogeliotoro">Rogelio Toro</a>
       </div>
     </footer>
   );
