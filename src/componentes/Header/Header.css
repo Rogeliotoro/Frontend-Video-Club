@@ -6,6 +6,7 @@ header {
     font-family: 'Josefin Sans', sans-serif;
     background-color: black;
     align-items: center;
+    border-top: 2px solid #9c27b0;
   }
   .enlaces {
     display: inline;

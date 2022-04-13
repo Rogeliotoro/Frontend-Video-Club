@@ -1,10 +1,10 @@
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     height: 5em;
     font-family: 'Josefin Sans', sans-serif;
     background-color: black;
+    border-top: 2px solid #9c27b0;
   }
   .enlacesFooter {
     display: flex;
