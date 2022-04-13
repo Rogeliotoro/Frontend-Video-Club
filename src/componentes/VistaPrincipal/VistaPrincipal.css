@@ -1,7 +1,12 @@
 .VistaPrincipal{
-    background-image: url("../../../img/tyson-moultrie-BQTHOGNHo08-unsplash.jpg");
+    background-color: black;
     background-size: cover;
-    min-height: 100vh;
-    padding: 3em;
-    opacity: 0.5;
+    min-height: 100vh;   
 }
+
+h2 {
+    font-size: 5.5em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+}
+

@@ -4,13 +4,12 @@ const VistaPrincipal = () => {
     return (
       <div className="VistaPrincipal">
         <div>
-          <h2>Roflix</h2>
         </div>
         <div>
-          <img></img>
+        <img src="https://i.ibb.co/R42yWGB/ROFLIX.gif" alt="ROFLIX" border="0"/>
         </div>
       </div>
-    );
+    );  
   };
 
 export default VistaPrincipal;
