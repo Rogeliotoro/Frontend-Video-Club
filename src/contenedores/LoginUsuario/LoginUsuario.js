@@ -1,10 +1,50 @@
+import { useNavigate } from "react-router-dom";
 import "./LoginUsuario.css";
 
 const LoginUsuario = () => {
+    const navegar = useNavigate();
+    const formSubmit = async (e) => {
+    // Make the submit dont refresh the page
+    e.preventDefault();
+
+    try {
+      const formData = {
+        email: e.target[0].value,
+        contraseña: e.target[1].value,
+      };
+
+      let loginUser = await fetch(
+        "https://apirest-video.herokuapp.com/api/login",
+        {
+          method: "POST",
+          body: JSON.stringify(formData),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      loginUser = await loginUser.json();
+
+      if (loginUser) {
+        localStorage.setItem("token", loginUser.token);
+        localStorage.setItem("id", loginUser.id);
+        localStorage.setItem("rol", loginUser.rol);
+        if (localStorage.getItem("rol") == "admin") {
+          navegar("/");
+        } 
+      } else {
+        alert("Usuario y/o contraseña incorrecto.");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  
   return (
     <div className="loginUsuario">
       <h2>LOGIN DE USUARIO</h2>
-      <form>
+      <form onSubmit={(e) => formSubmit(e)}>
         <label className="labelUsuario" htmlFor="email">Email</label>
         <input className="inputUsuario" 
         type="email" 
