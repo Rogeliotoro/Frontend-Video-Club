@@ -1,10 +1,43 @@
+import { useNavigate } from "react-router-dom";
 import "./RegistroUsuario.css";
 
 const RegistroUsuario = () => {
+    const navegar = useNavigate();
+    const formSubmit = async (e) => {
+    // Make the submit dont refresh the page
+    e.preventDefault();
+    try {
+        const formData = {
+          nombre: e.target[0].value,
+          apellidos: e.target[1].value,
+          email: e.target[2].value,
+          contraseña: e.target[3].value,
+          telefono: e.target[4].value,
+        };
+
+        const postUser = await fetch(
+            "https://apirest-video.herokuapp.com/api/users",
+            {
+              method: "POST",
+              body: JSON.stringify(formData),
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          );
+          const usuarioCreado = await postUser.json();
+    
+          if (usuarioCreado) {
+            navegar("/login");
+          }
+        } catch (error) {
+          alert("no se ha cargado la bd " + error);
+        }
+      };
   return (
     <div>
       <a href="/" ><img className="logo" src="https://i.ibb.co/s5TmSPj/ROFLIX-1.png" alt="ROFLIX-1" border="0"/></a>
-      <form className="crearUsuario">
+      <form onSubmit={(e) => formSubmit(e)} className="crearUsuario">
       <h2>REGISTRO DE USUARIO</h2>
         <label className="labelCrearUsuario" htmlFor="nombre">
         </label>
@@ -51,7 +84,7 @@ const RegistroUsuario = () => {
           name="tel"
           maxLength="12"
           minLength="12"
-          placeholder="+34#########"
+          placeholder="34#########"
         />
         <p> Estoy de acuerdo con <a href="#"> Terminos y condiciones</a></p>
         <input
