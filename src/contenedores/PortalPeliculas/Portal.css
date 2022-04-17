@@ -1,20 +1,16 @@
-.citasCardAll {
-    background-size: cover;
-    min-height: 100vh;
+.orden{
     display: flex;
-    gap: 2em;
-    flex-wrap: wrap;
-    justify-content: space-around;
+}
+.moviesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
   }
-  .infoCitasAll {
-    width: 23em;
-    background-color: black;
-    opacity: 0.8;
-    display: flex;
-    flex-direction: column;
-    margin: 2em;
-    box-shadow: 0px 0px 10px 7px #3d63ed;
-    padding: 1em;
-    border-radius: 20px;
-    height: 24em;
+  
+  @media (max-width: 560px) {
+    .moviesGrid {
+      grid-template-columns: 100%;
+    }
   }

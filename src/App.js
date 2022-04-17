@@ -5,7 +5,7 @@ import Footer from "./componentes/Footer/Footer";
 import Header from "./componentes/Header/Header";
 import RegistroUsuario from "./contenedores/RegistroUsuario/RegistroUsuario.js";
 import LoginUsuario from "./contenedores/LoginUsuario/LoginUsuario.js";
-import Peliculas from "./contenedores/PortalPeliculas/Portal.js";
+import TodasPeliculas from "./contenedores/PortalPeliculas/Portal.js";
 
 
 function App ()  {
@@ -17,7 +17,7 @@ function App ()  {
       <Route path="/" element={<VistaPrincipal />}></Route>
       <Route path="/registro" element={<RegistroUsuario />}></Route>
       <Route path="/login" element={<LoginUsuario />}></Route>
-      <Route path="/peliculas" element={<Peliculas />}></Route>
+      <Route path="/peliculas" element={<TodasPeliculas />}></Route>
       </Routes>
       <div></div>
       <Footer />
