@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+![enter image description here](https://i.ibb.co/jkW6m3N/ROFLIX-1.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  
 
-## Available Scripts
+ Bienvenido a Roflix  
+-
 
-In the project directory, you can run:
+**Proyecto Numero 7 del bootcamp de GeeksHubs 2022** en lo cual consiste en la elaboración del front de un videoclub, utilizando framework de react, redux y hacer un despliegue en AWS.
 
-### `npm start`
+🗒️Guia de uso
+-
+Para tener la dicha de usar nuestra app web tiene que seguir estos pasos: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ - Hacer click en: [Pulse aqui! ]() para empezar el recorrido por **Roflix**
+- Aqui ya tienes las vista de **home**, que cuenta con el logo inicial y dos botones en la parte superior derecha.
+- Al hacer click en botón de **registrar**  te redirigirá a una nueva vista donde te piden tus datos
+-  Ya una vez registrado te reenvía a la vista de **login**, donde debes introducir el email y contraseña que habías puesto en la vista de registrar.
+- Ahora estas en la **vista de peliculas* donde tienes un panel con todas las peliculas que tenemos disponible en el video club, cada una de ella tiene su descripcion.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+	
+- En la vista de área de cliente, cuando ya tengas una cita creada, esta también las puedes modificar y cancelarla.
+- Para modificar la cita solo tienes que hacer click en `modificar cita` y te reenvía a una vista donde puedes modificar estos datos:
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**🔥Herramientas usadas y necesarias.**
+-
 
-### `npm run build`
+<code><img  height="50"  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>  <code><img  height="50"  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png"></code>  <code><img  height="50"  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>  <code><img  height="50"  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>  <code><img  height="50"  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
+<code><img  height="50"  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/aws/aws.png"></code>  
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+✅Autores
+-
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Rogelio Toro https://github.com/Rogeliotoro
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🙋Colaborar
+-
+- Si deseas colaborar con éste proyecto u otro no dudes en contactar con nosotros o solicitar una pull request.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🙌Agradecimientos
+-
+-  A los tutores del bookcamp, Gonzalo , Pablo y  Paco  que siempre estan dispuesto ayudarnos y enseñarnos en este mundo de la programación.
+- A los compañeros de clases que siempre están dispuesto a compartir ideas y   ayudarnos mutuamente
