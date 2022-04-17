@@ -10,7 +10,7 @@ export function MovieCard({ movie }) {
         src={imageUrl}
         alt={movie.title}
       />
-      <div>{movie.title}</div>
+      <div className="titulo">{movie.title}</div>
       <div className="numero">{movie.vote_average}</div>
       <div className="texto">{movie.overview}</div>
     </li>
