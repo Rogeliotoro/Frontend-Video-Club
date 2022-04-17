@@ -30,7 +30,7 @@ const TodasPeliculas = () => {
         <div className="orden">
           {peliculas.map((movie) => {
                 return (
-                    <ul >
+                    <ul className="arreglo" >
                       {peliculas.map((movie) => (
                         <MovieCard key={movie.id} movie={movie} />
                       ))}

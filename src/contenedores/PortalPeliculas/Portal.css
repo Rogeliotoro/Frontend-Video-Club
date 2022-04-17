@@ -1,7 +1,5 @@
-.orden{
-    display: flex;
-}
-.moviesGrid {
+
+.arreglo {
     display: grid;
     grid-template-columns: repeat(auto-fill, 230px);
     gap: 40px;
@@ -10,7 +8,7 @@
   }
   
   @media (max-width: 560px) {
-    .moviesGrid {
+    .arreglo {
       grid-template-columns: 100%;
     }
   }

@@ -11,6 +11,8 @@ export function MovieCard({ movie }) {
         alt={movie.title}
       />
       <div>{movie.title}</div>
+      <div className="numero">{movie.vote_average}</div>
+      <div className="texto">{movie.overview}</div>
     </li>
   );
 }
