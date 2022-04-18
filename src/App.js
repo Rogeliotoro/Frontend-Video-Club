@@ -6,6 +6,7 @@ import Header from "./componentes/Header/Header";
 import RegistroUsuario from "./contenedores/RegistroUsuario/RegistroUsuario.js";
 import LoginUsuario from "./contenedores/LoginUsuario/LoginUsuario.js";
 import TodasPeliculas from "./contenedores/PortalPeliculas/Portal.js";
+import AlquilarPelicula from "./contenedores/Alquileres/Alquileres.js";
 
 
 function App ()  {
@@ -18,6 +19,7 @@ function App ()  {
       <Route path="/registro" element={<RegistroUsuario />}></Route>
       <Route path="/login" element={<LoginUsuario />}></Route>
       <Route path="/peliculas" element={<TodasPeliculas />}></Route>
+      <Route path="/alquiler" element={<AlquilarPelicula />}></Route>
       </Routes>
       <div></div>
       <Footer />
