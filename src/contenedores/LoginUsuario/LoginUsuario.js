@@ -12,10 +12,13 @@ const LoginUsuario = () => {
         "https://apirest-video.herokuapp.com/api/login",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
+          body: JSON.stringify ( {
             email: e.target[0].value,
             contraseña: e.target[1].value,
+          } 
+          ),
+          headers: {
+            "Content-Type": "application/json",
           },
         }
       );
@@ -24,9 +27,9 @@ const LoginUsuario = () => {
       if (loginUser) {
         localStorage.setItem("email", loginUser.email);
         localStorage.setItem("contraseña", loginUser.contraseña);
-        if (localStorage.getItem()) {
+        
           navegar("/peliculas");
-        } 
+    
       } else {
         alert("Usuario y/o contraseña incorrecto.");
       }
