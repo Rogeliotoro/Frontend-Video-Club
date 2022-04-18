@@ -25,9 +25,8 @@ const LoginUsuario = () => {
       loginUser = await loginUser.json();
 
       if (loginUser) {
-        localStorage.setItem("email", loginUser.email);
-        localStorage.setItem("contraseña", loginUser.contraseña);
-        
+        localStorage.setItem("token", loginUser.token);
+        localStorage.setItem("id", loginUser.id);
           navegar("/peliculas");
     
       } else {
