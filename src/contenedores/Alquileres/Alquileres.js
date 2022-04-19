@@ -8,7 +8,7 @@ const AlquilarPelicula = () => {
 
   const getpeliculas = async () => {
     const peliculasRes = await fetch(
-      "https://apirest-video.herokuapp.com/api/rent",
+      "https://apirest-video.herokuapp.com/api/movies",
       {
         method: "GET",
       }
@@ -46,7 +46,7 @@ const AlquilarPelicula = () => {
       );
 
       if (postPelicula) {
-        
+
         navegar("/peliculas");
       }
     } catch (error) {
@@ -54,8 +54,12 @@ const AlquilarPelicula = () => {
     }
   };
   return (
-    <div >
-      
+    <div className="alquileres">
+      <div>
+        <h2 >Alquilar Película</h2>
+        <form onSubmit={(e) => formSubmit(e)}>
+        </form>
+      </div>
     </div>
   );
 };

@@ -5,42 +5,42 @@ import { MovieCard } from "./Card.js";
 
 
 const TodasPeliculas = () => {
-    const navegar = useNavigate();
-  
-    const [peliculas, setPeliculas] = useState([]);
-    const getPeliculas = async () => {
-        const peliculasRes = await fetch(
-            "https://apirest-video.herokuapp.com/api/movies", 
-            {
-                method: 'GET',
-            }
-          );
-      const datosPeliculas = await peliculasRes.json();
-      setPeliculas(datosPeliculas);
-    };
-    useEffect(() => {
-      try {
-        getPeliculas();
-      } catch (error) {
-        console.log(error);
-      }
-    }, []);
-    console.log(peliculas)
-    return (
-        <div className="orden">
-          {peliculas.map((movie) => {
-                return (
-                    <ul className="arreglo" >
-                      {peliculas.map((movie) => (
-                        <MovieCard key={movie.id} movie={movie} />
-                      ))}
-                    </ul>
-                  );
-            
+  const navegar = useNavigate();
 
-          })}
-        </div>
-      );
+  const [peliculas, setPeliculas] = useState([]);
+  const getPeliculas = async () => {
+    const peliculasRes = await fetch(
+      "https://apirest-video.herokuapp.com/api/movies",
+      {
+        method: 'GET',
+      }
+    );
+    const datosPeliculas = await peliculasRes.json();
+    setPeliculas(datosPeliculas);
+  };
+  useEffect(() => {
+    try {
+      getPeliculas();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+  console.log(peliculas)
+  return (
+    <div className="orden">
+      {peliculas.map((movie) => {
+        return (
+          <ul className="arreglo" >
+            {peliculas.map((movie) => (
+              <MovieCard key={movie.id} movie={movie} />
+            ))}
+          </ul>
+        );
+
+
+      })}
+    </div>
+  );
 };
 
 export default TodasPeliculas
